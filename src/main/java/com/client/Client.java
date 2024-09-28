@@ -1,6 +1,6 @@
-package com.crows;
+package com.client;
 
-public class Main {
+public class Client {
     public static void main(String[] args) {
         System.out.println("Hello world!");
     }
