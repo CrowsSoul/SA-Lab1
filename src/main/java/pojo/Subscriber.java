@@ -19,6 +19,7 @@ public class Subscriber implements ISubscriber {
      * 获取订阅者名称
      * @return 订阅者名称
      */
+    @Override
     public String getName() {
         return name;
     }

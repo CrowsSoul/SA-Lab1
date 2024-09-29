@@ -22,6 +22,7 @@ public class SubList implements ISubList {
      * 获取订阅者列表名称
      * @return 订阅者列表名称
      */
+    @Override
     public String getName() {
         return name;
     }

@@ -32,4 +32,10 @@ public interface ISubList {
      * @param message 待接收的消息
      */
     public void receiveMessage(Message message);
+
+    /**
+     * 获取订阅者列表的名称
+     * @return 订阅者列表的名称
+     */
+    public String getName();
 }

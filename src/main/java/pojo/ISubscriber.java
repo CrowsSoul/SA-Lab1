@@ -21,4 +21,10 @@ public interface ISubscriber {
      * 展示消息列表
      */
     public void showMessages();
+
+    /**
+     * 获取订阅者的名字
+     * @return 订阅者的名字
+     */
+    public String getName();
 }
