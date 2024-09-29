@@ -36,5 +36,5 @@ public interface IMessageManager {
      * @param source 消息源名称
      * @param subs 待添加的订阅者列表
      */
-    public void addSubs(String source,ISubList subs);
+    public void addSubs(IMessageSource source,ISubList subs);
 }

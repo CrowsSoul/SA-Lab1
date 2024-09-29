@@ -26,16 +26,20 @@ public class Subscriber implements ISubscriber {
 
     @Override
     public void receiveMessage(Message message) {
-
+        messages.add(message);
     }
 
     @Override
     public void checkMessage(int index) {
-
+        messages.get(index).show();
     }
 
     @Override
     public void showMessages() {
-
+        int i = 1;
+        for (Message message : messages) {
+            System.out.println(i + ". " + message.getTitle());
+            i++;
+        }
     }
 }

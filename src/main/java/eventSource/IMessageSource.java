@@ -14,5 +14,11 @@ public interface IMessageSource {
      * @param title 标题
      * @param content 内容
      */
-    public void createMessage(String title,String content);
+    public Message createMessage(String title,String content);
+
+    /**
+     * 获取消息源名称
+     * @return 消息源名称
+     */
+    public String getName();
 }

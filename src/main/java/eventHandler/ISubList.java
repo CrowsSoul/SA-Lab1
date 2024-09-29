@@ -4,8 +4,8 @@ import pojo.Message;
 import pojo.ISubscriber;
 
 /**
- * 订阅者列表接口
- * 维护订阅者列表
+ * 订阅者名单接口
+ * 维护订阅者名单
  * 负责向订阅者发送消息
  */
 public interface ISubList {

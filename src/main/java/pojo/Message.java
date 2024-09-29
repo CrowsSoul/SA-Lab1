@@ -39,4 +39,14 @@ public class Message {
     {
         return this.title;
     }
+
+    /**
+     * 获取消息源
+     * @return 消息源的名称
+     */
+    public String getSource()
+    {
+        return source;
+    }
+
 }

@@ -1,5 +1,6 @@
 package eventSource;
 
+import eventManager.MessageManager;
 import pojo.Message;
 
 /**
@@ -11,12 +12,14 @@ public class MessageSource implements IMessageSource {
 
     @Override
     public void sendMessage(Message message) {
-
+        MessageManager manager = new MessageManager();
+        manager.receiveMessage(message);
+        manager.distributeMessage(message);
     }
 
     @Override
-    public void createMessage(String title, String content) {
-
+    public Message createMessage(String title, String content) {
+        return new Message(content,name,title);
     }
 
     /**
