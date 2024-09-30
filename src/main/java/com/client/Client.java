@@ -18,9 +18,9 @@ import java.util.regex.Pattern;
 import java.util.Scanner;
 
 public class Client {
-    private final static Map<String,Department> departments = new HashMap<String,Department>(); //存储部门
-    private final static Map<String,Subscriber> subscribers = new HashMap<String, Subscriber>(); //存储订阅者
-    private final static Map<String,SubList> subLists = new HashMap<String, SubList>(); //存储订阅者名单
+    private final static Map<String,Department> departments = new HashMap<>(); //存储部门
+    private final static Map<String,Subscriber> subscribers = new HashMap<>(); //存储订阅者
+    private final static Map<String,SubList> subLists = new HashMap<>(); //存储订阅者名单
     private final static MessageManager messageManager = new MessageManager(); //消息管理器
     private final static Command command = new Command(); //指令系统
     public static void main(String[] args)
@@ -134,7 +134,7 @@ public class Client {
     private static class Command implements ICommand
     {
         private String command; // 读取到的指令
-        private final List<String> regex = new ArrayList<String>(); //指令格式
+        private final List<String> regex = new ArrayList<>(); //指令格式
 
         public Command()
         {
