@@ -49,6 +49,7 @@ public class MessageSource implements IMessageSource,Runnable {
     public void run() {
         if(message!= null) {
             sendMessage(message);
+            System.out.println("消息发送成功！");
         }
     }
 }
