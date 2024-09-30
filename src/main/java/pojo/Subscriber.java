@@ -24,8 +24,13 @@ public class Subscriber implements ISubscriber {
         return name;
     }
 
+    /**
+     * 接收消息
+     * 支持多线程调用
+     * @param message 接收到的消息
+     */
     @Override
-    public void receiveMessage(Message message) {
+    public synchronized void receiveMessage(Message message) {
         messages.add(message);
     }
 

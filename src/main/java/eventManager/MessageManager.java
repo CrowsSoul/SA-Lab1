@@ -17,8 +17,13 @@ public class MessageManager implements IMessageManager {
     private final static List<Message> messages = new ArrayList<Message>(); // 消息列表
     private final static Map<String, List<ISubList>> relations = new HashMap<String, List<ISubList>>(); // 订阅关系
 
+    /**
+     * 用于接收消息
+     * 支持多线程调用
+     * @param message 待接收的消息
+     */
     @Override
-    public void receiveMessage(Message message) {
+    public synchronized void receiveMessage(Message message) {
         //接收到消息之后，首先需要将消息添加到消息列表中
         messages.add(message);
     }

@@ -8,7 +8,8 @@ import pojo.Student;
 import pojo.Teacher;
 
 public class Client {
-    public static void main(String[] args)
+
+    private static void runExample()
     {
         // 首先对订阅者进行初始化
         Teacher t1 = new Teacher("Master Lee");
@@ -86,8 +87,11 @@ public class Client {
         s1.showMessages(); // 显示Jack同学的消息
         System.out.println("*选择选课系统故障消息进行查看...");
         s1.checkMessage(1);
+    }
 
-
+    public static void main(String[] args)
+    {
+        runExample();
     }
 
 }
