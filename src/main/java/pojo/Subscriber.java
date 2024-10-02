@@ -8,6 +8,14 @@ public class Subscriber implements ISubscriber {
     private final List<Message> messages = new ArrayList<Message>();
 
     /**
+     * 获取消息名单
+     * @return 消息集合
+     */
+    public List<Message> getMessages(){
+        return messages;
+    }
+
+    /**
      * 构造方法
      * @param name 订阅者名称
      */

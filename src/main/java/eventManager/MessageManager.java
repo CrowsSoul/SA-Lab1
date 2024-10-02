@@ -18,6 +18,21 @@ public class MessageManager implements IMessageManager {
     private final static Map<String, List<ISubList>> relations = new HashMap<String, List<ISubList>>(); // 订阅关系
 
     /**
+     * 获取消息列表
+     * @return 消息集合
+     */
+    public List<Message> getMessages(){
+        return  messages;
+    }
+
+    /**
+     * 获取订阅关系列表
+     * @return 订阅关系表
+     */
+    public Map<String, List<ISubList>> getRelations(){
+        return  relations;
+    }
+    /**
      * 用于接收消息
      * 支持多线程调用
      * @param message 待接收的消息

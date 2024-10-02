@@ -10,6 +10,15 @@ public class SubList implements ISubList {
     private final String name; // 订阅者列表名称
     private final List<ISubscriber> subscribers = new ArrayList<ISubscriber>();
 
+
+    /**
+     * 获取订阅者名单的表单
+     * @return 该订阅者名单的订阅者表单
+     */
+    public List<ISubscriber> getsubscribers(){
+        return subscribers;
+    }
+
     /**
      * 构造方法
      * @param name 订阅者名单名称
